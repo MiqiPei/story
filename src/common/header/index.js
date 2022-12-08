@@ -4,6 +4,7 @@ import {
     Logo,
     Nav,
     NavItem,
+    SearchWrapper,
     NavSearch,
     Addition,
     Button
@@ -20,13 +21,19 @@ export default class Header extends Component {
           <NavItem className='left active'>Homepage</NavItem>
           <NavItem className='left'>Downloa App</NavItem>
           <NavItem className='right'>Login</NavItem>
-          <NavItem className='right'>Aa</NavItem>
-          <NavSearch></NavSearch>
+          <NavItem className='right'>
+            <i className="iconfont">&#xe636;</i>
+          </NavItem>
+          <SearchWrapper>
+            <NavSearch></NavSearch>
+            <i className="iconfont">&#xe614;</i>
+          </SearchWrapper>
+        </Nav>
           <Addition>
-            <Button className='writting'>Post</Button>
+            <Button className='writting'><i className="iconfont">&#xe615;</i>Post</Button>
             <Button className='reg'>Register</Button>
           </Addition>
-        </Nav>
+        
       </HeaderWrapper>
    
     )
