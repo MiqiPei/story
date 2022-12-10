@@ -56,14 +56,25 @@ export const NavSearch = styled.input.attrs({
   border-radius: 19px;
   background: #eee;
   font-size: 14px;
+  color: #666;
   &::placeholder {
 		color: #999;
 	}
+  &.focused{
+    width:240px;
+  }
 `;
 
 export const SearchWrapper = styled.div`
 	position: relative;
 	float: left;
+  .slide-enter {
+    wtidth:160px;
+    transition: all .2s ease-out;
+  }
+  .slide-enter-active {
+    width: 240px;
+  }
 	.iconfont{
 		position: absolute;
 		right: 5px;

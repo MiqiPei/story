@@ -4,4 +4,4 @@ import App from './App';
 import './style.js';
 import './statics/iconfont/iconfont.js';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<App/>, document.getElementById('root'));
