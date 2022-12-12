@@ -69,11 +69,17 @@ export const SearchWrapper = styled.div`
 	position: relative;
 	float: left;
   .slide-enter {
-    wtidth:160px;
+    width:160px;
     transition: all .2s ease-out;
   }
   .slide-enter-active {
     width: 240px;
+  }
+  .slide-exit {
+    transition: all .3s ease-out;
+  }
+  .slide-exit-actibe{
+    width: 160px;
   }
 	.iconfont{
 		position: absolute;
