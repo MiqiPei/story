@@ -1,13 +1,24 @@
 import { fromJS } from 'immutable';
 const defaultState = fromJS({
     topicList: [{
-        id:1,
+        id: 1,
         title: "Health",
         imgUrl: "http://www.designerspics.com/wp-content/uploads/2015/06/Country-Fig-bread-and-dry-fuits_free_photo.jpg"
     },{
-        id:2,
+        id: 2,
         title: "Travel",
         imgUrl: "http://www.designerspics.com/wp-content/uploads/2014/07/fallen_leaves_free_photo.jpg"
+    }],
+    articleList: [{
+        id: 1,
+        title: "Should children educate parents?",
+        desc: "Here is one example where my daughter's response blew my mind. We had just landed in Paris from Croatia, and we were in the metro from the airport to the centre. I was carrying my daughter in my arms and standing next to a beautiful middle aged black woman. This was the first time she saw a black person as in Croatia there are hardly any multi-cultural foreigners. I asked my daughter what she thought of this lady, thinking she would make a remark about her different skin colour. She answered, ‘She's got beautiful hair’.",
+        imgUrl: "http://www.designerspics.com/wp-content/uploads/2014/08/girl_painting_free_photo.jpg"
+    },{
+        id: 2,
+        title: "Should children educate parents?",
+        desc: "Here is one example where my daughter's response blew my mind. We had just landed in Paris from Croatia, and we were in the metro from the airport to the centre. I was carrying my daughter in my arms and standing next to a beautiful middle aged black woman. This was the first time she saw a black person as in Croatia there are hardly any multi-cultural foreigners. I asked my daughter what she thought of this lady, thinking she would make a remark about her different skin colour. She answered, ‘She's got beautiful hair’.",
+        imgUrl: "http://www.designerspics.com/wp-content/uploads/2014/08/girl_painting_free_photo.jpg"
     }]
 });
 
