@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import { Link } from 'react-router-dom';
 import { CSSTransition } from 'react-transition-group';
 import  { actionCreators } from './store';
 import {
@@ -55,28 +56,30 @@ class Header extends Component{
     const { focused, handleInputFocus, handleInputBlur, list } = this.props;
     return(
       <HeaderWrapper>
-            <><Logo href='/' />
+        <Link to='/'>
+          <Logo/>
+        </Link>
         <Nav>
-        <NavItem className='left active'>Homepage</NavItem>
-        <NavItem className='left'>Downloa App</NavItem>
-        <NavItem className='right'>Login</NavItem>
-        <NavItem className='right'>
-          <i className="iconfont">&#xe636;</i>
-        </NavItem>
-        <SearchWrapper>
-          <CSSTransition in={focused} timeout={200} classNames="slide">
-            <NavSearch
-              className={focused ? 'focused' : ''}
-              onFocus={() => handleInputFocus(list)}
-              onBlur={handleInputBlur}></NavSearch>
-          </CSSTransition>
-          <i className={focused ? 'focused iconfont zon' : 'iconfont zoom'}>&#xe614;</i>
-          {this.getListArea()}
-        </SearchWrapper>
+          <NavItem className='left active'>Homepage</NavItem>
+          <NavItem className='left'>Downloa App</NavItem>
+          <NavItem className='right'>Login</NavItem>
+          <NavItem className='right'>
+            <i className="iconfont">&#xe636;</i>
+          </NavItem>
+          <SearchWrapper>
+            <CSSTransition in={focused} timeout={200} classNames="slide">
+              <NavSearch
+                className={focused ? 'focused' : ''}
+                onFocus={() => handleInputFocus(list)}
+                onBlur={handleInputBlur}></NavSearch>
+            </CSSTransition>
+            <i className={focused ? 'focused iconfont zon' : 'iconfont zoom'}>&#xe614;</i>
+            {this.getListArea()}
+          </SearchWrapper>
       </Nav><Addition>
           <Button className='writting'><i className="iconfont">&#xe615;</i>Post</Button>
           <Button className='reg'>Register</Button>
-        </Addition></>
+        </Addition>
       </HeaderWrapper>
     );   
 
