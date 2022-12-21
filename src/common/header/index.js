@@ -83,7 +83,12 @@ class Header extends Component{
             {this.getListArea()}
           </SearchWrapper>
       </Nav><Addition>
-          <Button className='writting'><i className="iconfont">&#xe615;</i>Post</Button>
+          <Link to='/write'>
+            <Button className='writting'>
+              <i className="iconfont">&#xe615;</i>
+              Post
+            </Button>
+          </Link>
           <Button className='reg'>Register</Button>
         </Addition>
       </HeaderWrapper>
